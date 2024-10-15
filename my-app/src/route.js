@@ -12,7 +12,7 @@ function App() {
         <Router> {/* Wrap your app with Router */}
             <Navbar />
             <Routes>
-                <Route path="/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamic" element={<Home />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/working" element={<Working />} />
                 <Route path="/dataset" element={<Dataset />} />
                 <Route path="/about" element={<About />} />

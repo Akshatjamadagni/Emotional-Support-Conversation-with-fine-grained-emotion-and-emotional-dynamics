@@ -13,7 +13,7 @@ const Navbar = () => {
     <AppBar position="static" color="primary">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          My App
+        CAUSEC
         </Typography>
         <Box sx={{ display: "flex" }}>
           <Button
@@ -27,7 +27,7 @@ const Navbar = () => {
           <Button
             color="inherit"
             component={Link}
-            to="/chatbot"
+            to="/"
             startIcon={<ChatIcon />}
           >
             Chatbot
