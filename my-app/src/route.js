@@ -6,16 +6,17 @@ import Navbar from './Components/navbar'; // Your Navbar component
 import Working from "./Components/working"; // Example additional component
 import Dataset from "./Components/dataset"; // Example additional component
 import About from "./Components/about"; // Example additional component
-
+import { Navigate } from 'react-router-dom';
 function App() {
     return (
         <Router> {/* Wrap your app with Router */}
             <Navbar />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamic" element={<Home />} />
                 <Route path="/working" element={<Working />} />
                 <Route path="/dataset" element={<Dataset />} />
                 <Route path="/about" element={<About />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </Router>
     );

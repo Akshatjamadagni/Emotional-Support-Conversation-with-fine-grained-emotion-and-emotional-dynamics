@@ -7,7 +7,7 @@ import {
   Typography,
   List,
   ListItem,
-  ListItemText,
+
   Avatar,
 } from "@mui/material";
 import { Send as SendIcon } from "@mui/icons-material";
