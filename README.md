@@ -123,8 +123,7 @@ npm install
 # Run frontend
 npm start
 ## 🛠️ Technical Components
-
-
+```
 
 ### Prerequisites
 bash
@@ -135,23 +134,6 @@ numpy >= 1.19.2
 comet-commonsense >= 1.0
 
 
-### Installation
-bash
-# Clone repository
-git clone https://github.com/yourusername/cauesc.git
-cd cauesc
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Install COMET
-pip install comet-commonsense
-
-
-## 💻 Usage
-
-python
-from cauesc import CauESCModel
 
 
 
