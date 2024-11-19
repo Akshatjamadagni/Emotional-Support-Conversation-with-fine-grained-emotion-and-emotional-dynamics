@@ -227,7 +227,7 @@ git push origin feature/NewFeature
 
 
 ## 📄 License
-MIT License - see [LICENSE.md](LICENSE.md)
+MIT License - see [LICENSE.md](License.md)
 
 
 
