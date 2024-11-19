@@ -240,4 +240,4 @@ MIT License - see [LICENSE.md](LICENSE.md)
 - Bosselut et al., 2019. [COMET: The Commonsense Transformers](https://arxiv.org/pdf/2401.17755).
 - [GitHub Repository](https://github.com/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics).
 
-License: This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+License: This project is licensed under the MIT License. See the [LICENSE](License) file for details.
