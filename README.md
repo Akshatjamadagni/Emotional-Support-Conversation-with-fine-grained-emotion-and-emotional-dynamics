@@ -102,7 +102,26 @@ The core logic for emotional support conversation generation, divided into three
   - `strategy_history_embeddings.pt`: Pre-trained embeddings for strategy history.  
 
 ---
+## 🚀 Installation
 
+```bash
+# Clone repository
+git clone https://github.com/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics.git
+cd Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics
+
+# Install backend dependencies
+pip install -r requirements.txt
+
+
+
+# Navigate to frontend folder
+cd Frontend
+
+# Install frontend dependencies
+npm install
+
+# Run frontend
+npm start
 ## 🛠️ Technical Components
 
 
@@ -178,14 +197,6 @@ git push origin feature/NewFeature
 
 5. Create Pull Request
 
-## 📚 Citation
-bibtex
-@article{cauesc2024,
-    title={CauESC: A Cause-Aware Emotional Support Conversation System},
-    author={[Your Team Names]},
-    journal={arXiv preprint},
-    year={2024}
-}
 
 
 ## 📄 License
