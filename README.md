@@ -103,7 +103,7 @@ The core logic for emotional support conversation generation, divided into three
 
 ---
 ## 🚀 Installation
-
+## Client
 ```bash
 # Clone repository
 git clone https://github.com/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics.git
@@ -122,7 +122,16 @@ npm install
 
 # Run frontend
 npm start
-## 🛠️ Technical Components
+
+
+
+```
+## Server
+```
+# Start backend server
+python3 Backend/test.py
+
+
 ```
 
 ### Prerequisites
@@ -184,6 +193,12 @@ git push origin feature/NewFeature
 ## 📄 License
 MIT License - see [LICENSE.md](LICENSE.md)
 
+## 👥 Authors
+
+- **Akshat Jamadagni**  
+- **Aditya Prakash**  
+- **Shashank Pant**  
+- **Nandostream11**  
 
 
 ## 🙏 Acknowledgments
