@@ -1,5 +1,41 @@
 # Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics
 ---
+## 👥 Authors
+
+- **Akshat Jamadagni**  - [GitHub: Akshatjamadagni](https://github.com/Akshatjamadagni)  
+- **Aditya Prakash**  - [GitHub: Aditya-Prakash-25](https://github.com/Aditya-Prakash-25)  
+- **Shashank Pant**  - [GitHub: shashankpantiitbhilai](https://github.com/shashankpantiitbhilai)  
+- **Nandostream11**  - [GitHub: Nandostream11](https://github.com/Nandostream11)
+
+---
+
+## 📊 GitHub Stats
+![Shashank's GitHub Stats](https://github-readme-stats.vercel.app/api?username=shashankpantiitbhilai&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=radical)
+![Akshat's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Akshatjamadagni&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=radical)
+![Aditya's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Aditya-Prakash-25&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=radical)
+![Nandostream11's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Nandostream11&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=radical)
+
+---
+
+## 🚀 Important Repository Info
+
+- **Repository URL**: [Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics](https://github.com/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics)  
+- **Latest Release**: [v1.0.0](https://github.com/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics/releases/tag/v1.0.0)  
+- **License**: ![License Badge](https://img.shields.io/github/license/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics?color=blue)  
+- **Build Status**: ![Build Status](https://img.shields.io/github/workflow/status/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics/CI?label=build&logo=github)  
+- **Contributors**: ![Contributors](https://img.shields.io/github/contributors/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics?style=flat-square)  
+ 
+
+---
+
+## 🚀 Repository Stats
+
+![GitHub Repo Stars](https://img.shields.io/github/stars/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics?style=social)  
+![GitHub Forks](https://img.shields.io/github/forks/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics?style=social)  
+![GitHub Issues](https://img.shields.io/github/issues/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics)  
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics)
+
+
 
 ## 🌟 Overview
 CauESC is an advanced emotional support conversation model that integrates causal-aware encoders and multi-strategy executors to deliver fine-grained emotional responses. The project is built with a clear separation of backend, frontend, and model components, ensuring modularity and ease of development.
@@ -193,12 +229,6 @@ git push origin feature/NewFeature
 ## 📄 License
 MIT License - see [LICENSE.md](LICENSE.md)
 
-## 👥 Authors
-
-- **Akshat Jamadagni**  
-- **Aditya Prakash**  
-- **Shashank Pant**  
-- **Nandostream11**  
 
 
 ## 🙏 Acknowledgments
