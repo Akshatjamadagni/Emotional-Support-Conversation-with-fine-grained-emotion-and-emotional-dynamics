@@ -4,7 +4,7 @@
 ## 🌟 Overview
 CauESC is an advanced emotional support conversation model that integrates causal-aware encoders and multi-strategy executors to deliver fine-grained emotional responses. The project is built with a clear separation of backend, frontend, and model components, ensuring modularity and ease of development.
 ## Problem Statement:
-To improve the quality of responses generated in dialogue systems tailored for emotional support a machine learning model known as CauESC model needs to be developed, which enhances conversations in emotional support contexts by recognizing emotional causes and effects. By capturing the emotional dynamics between the seeker and support provider, CauESC offers a comprehensive solution for understanding and addressing emotional distress.
+To improve the quality of responses generated in dialogue systems tailored for emotional support a machine learning model known as CauESC model needs to be developed, which enhances conversations in emotional support contexts by recognizing emotional causes and effects. By capturing the emotional dynamics between the seeker and support provider, CauESC offers a comprehensive solution for understanding and addressing emotional distress.w
 
 ## Motivation/Faults in the previous similar models
 Existing models for emotional support conversations face 2 major challenges:
@@ -102,6 +102,45 @@ The core logic for emotional support conversation generation, divided into three
   - `strategy_history_embeddings.pt`: Pre-trained embeddings for strategy history.  
 
 ---
+
+### 4. Dataset Structure
+![Dataset Architecture](/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics/Frontend/src/Images/dataset.png)
+*Dataset organization showing:
+- Input text corpus
+- Preprocessing pipeline
+- Training/validation/test split
+- Data cleaning and normalization steps
+- Labeling and annotation schema*
+
+### 5. Model Workflow
+![Model Workflow](/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics/Frontend/src/Images/workflow.png)
+*End-to-end processing pipeline:
+1. User input processing
+2. Token embedding
+3. Context encoding
+4. Response generation
+5. Post-processing and formatting
+6. Response delivery*
+
+### 6. User Interface
+![User Interface](/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics/Frontend/src/Images/chatbot.png)
+*Complete system architecture showing:
+- Frontend React components
+- API Gateway
+- Backend services
+- Model server
+- Data flow between components*
+
+## Features
+
+- Interactive user interface for model interaction
+- Real-time response generation with typing animation
+- Multi-turn conversation support
+- Context retention across messages
+- Connection to Flask backend server
+- Modern React components and practices
+
+
 ## 🚀 Installation
 
 ```bash
