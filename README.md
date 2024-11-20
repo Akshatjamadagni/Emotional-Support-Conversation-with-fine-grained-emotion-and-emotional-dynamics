@@ -146,7 +146,7 @@ The core logic for emotional support conversation generation, divided into three
 ---
 
 ### 4. Dataset Structure
-![Dataset Architecture](/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics/Frontend/src/Images/dataset.png)
+![Dataset Architecture](Frontend/src/Images/dataset.png)
 *Dataset organization showing:
 - Input text corpus
 - Preprocessing pipeline
