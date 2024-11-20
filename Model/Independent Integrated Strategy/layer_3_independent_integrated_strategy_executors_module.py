@@ -7,17 +7,13 @@ Original file is located at
     https://colab.research.google.com/drive/1vDl6NG4-xOqVFs8nDTmPT8KwbehFkoPx
 """
 
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
-from transformers import BlenderbotSmallTokenizer, BlenderbotSmallForConditionalGeneration
-from typing import List, Dict
-import logging
-from tqdm import tqdm
 
 # Load the model and tokenizer
-model_name = "facebook/blenderbot_small-90M"
-tokenizer = BlenderbotSmallTokenizer.from_pretrained(model_name)
-model = BlenderbotSmallForConditionalGeneration.from_pretrained(model_name).to(self.device)
-
+model_name = "/content/blenderbot_small-90M"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 # Strategy descriptions
 strategy_descriptions = {
     "Question": "Asking for information related to the problem to help the help-seeker articulate the issues that they face. Open-ended questions are best, and closed questions can be used to get specific information.",
