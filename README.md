@@ -1,5 +1,41 @@
 # Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics
 ---
+## 👥 Authors
+
+- **Akshat Jamadagni**  - [GitHub: Akshatjamadagni](https://github.com/Akshatjamadagni)  
+- **Aditya Prakash**  - [GitHub: Aditya-Prakash-25](https://github.com/Aditya-Prakash-25)  
+- **Shashank Pant**  - [GitHub: shashankpantiitbhilai](https://github.com/shashankpantiitbhilai)  
+- **Nandostream11**  - [GitHub: Nandostream11](https://github.com/Nandostream11)
+
+---
+
+## 📊 GitHub Stats
+![Shashank's GitHub Stats](https://github-readme-stats.vercel.app/api?username=shashankpantiitbhilai&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=radical)
+![Akshat's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Akshatjamadagni&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=radical)
+![Aditya's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Aditya-Prakash-25&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=radical)
+![Nandostream11's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Nandostream11&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=radical)
+
+---
+
+## 🚀 Important Repository Info
+
+- **Repository URL**: [Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics](https://github.com/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics)  
+- **Latest Release**: [v1.0.0](https://github.com/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics/releases/tag/v1.0.0)  
+- **License**: ![License Badge](https://img.shields.io/github/license/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics?color=blue)  
+- **Build Status**: ![Build Status](https://img.shields.io/github/workflow/status/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics/CI?label=build&logo=github)  
+- **Contributors**: ![Contributors](https://img.shields.io/github/contributors/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics?style=flat-square)  
+ 
+
+---
+
+## 🚀 Repository Stats
+
+![GitHub Repo Stars](https://img.shields.io/github/stars/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics?style=social)  
+![GitHub Forks](https://img.shields.io/github/forks/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics?style=social)  
+![GitHub Issues](https://img.shields.io/github/issues/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics)  
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics)
+
+
 
 ## 🌟 Overview
 CauESC is an advanced emotional support conversation model that integrates causal-aware encoders and multi-strategy executors to deliver fine-grained emotional responses. The project is built with a clear separation of backend, frontend, and model components, ensuring modularity and ease of development.
@@ -27,44 +63,50 @@ Here's an organized breakdown of the project structure:
 ```
 📦 Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics
 ├── 📂 Dataset/
-│   └── 📄 ESConv.json                   # Emotional support conversation dataset
+│   ├── 📄 ESConv.json                   # Emotional support conversation dataset
+│   └── 📘 README.md                     # Documentation for the Dataset directory
 │
 ├── 📂 Backend/
 │   ├── 📜 test.py                       # Script to test backend functionality
-│                        
 │
 ├── 📂 Frontend/
 │   ├── 📂 public/                       # Public assets
 │   │   └── ...
-│   └── 📂 src/
-│       ├── 📂 Components/               # React components
-│       │   ├── 📜 about.jsx             # About page component
-│       │   ├── 📜 chatbot.jsx           # Chatbot interface component
-│       │   ├── 📜 dataset.jsx           # Dataset visualization component
-│       │   ├── 📜 navbar.jsx            # Navigation bar component
-│       │   └── 📜 working.jsx           # Model functionality explanation component
-│       ├── 📜 App.js                    # Main React application
-│       ├── 📜 route.js                  # Frontend routing configuration
-│       └── 📜 index.js                  # React DOM rendering entry point
+│   ├── 📂 src/
+│   │   ├── 📂 Components/               # React components
+│   │   │   ├── 📜 about.jsx             # About page component
+│   │   │   ├── 📜 chatbot.jsx           # Chatbot interface component
+│   │   │   ├── 📜 dataset.jsx           # Dataset visualization component
+│   │   │   ├── 📜 navbar.jsx            # Navigation bar component
+│   │   │   └── 📜 working.jsx           # Model functionality explanation component
+│   │   ├── 📜 App.js                    # Main React application
+│   │   ├── 📜 route.js                  # Frontend routing configuration
+│   │   └── 📜 index.js                  # React DOM rendering entry point
+│   └── 📘 README.md                     # Documentation for the Frontend directory
 │
 ├── 📂 Model/
 │   ├── 📂 Causal Interaction Module/
-│   │   └── 📜 layer_2_causal_encoder_module.py   # Cause-aware encoder logic
+│   │   ├── 📜 layer_2_causal_encoder_module.py   # Cause-aware encoder logic
+│   │   └── 📘 README.md                         # Documentation for the Causal Interaction Module
 │   │
 │   ├── 📂 Cause Aware Encoder/
-│   │   ├── 📜 layer_1_encoder_module.py # Main encoder module
-│   │   └── 📜 layer_1_comet_module.py   # COMET-based commonsense reasoning
+│   │   ├── 📜 layer_1_encoder_module.py         # Main encoder module
+│   │   ├── 📜 layer_1_comet_module.py           # COMET-based commonsense reasoning
+│   │   └── 📘 README.md                         # Documentation for the Cause Aware Encoder
 │   │
 │   ├── 📂 Independent Integrated Strategy/
-│   │   └── 📜 layer_3_independent_integrated_strategy_executors.py # Multi-strategy response generation
+│   │   ├── 📜 layer_3_independent_integrated_strategy_executors.py # Multi-strategy response generation
+│   │   └── 📘 README.md                                           # Documentation for Independent Integrated Strategy
 │   │
-│   ├── 📄 context_embeddings.pt         # Pre-trained context embeddings
-│   ├── 📄 situation_embeddings.pt       # Pre-trained situation embeddings
-│   └── 📄 strategy_history_embeddings.pt # Pre-trained strategy embeddings
+│   └── 📘 README.md                      # Documentation for the Model directory
 │
+├── 📄 context_embeddings.pt             # Pre-trained context embeddings
+├── 📄 situation_embeddings.pt           # Pre-trained situation embeddings
+├── 📄 strategy_history_embeddings.pt    # Pre-trained strategy embeddings
 ├── 📓 CODE.ipynb                        # Jupyter notebook for model experimentation
 ├── 📋 requirements.txt                  # Python project dependencies
 └── 📘 README.md                         # Project documentation
+
 ```
 ### 1. **Dataset**
 
@@ -142,7 +184,7 @@ The core logic for emotional support conversation generation, divided into three
 
 
 ## 🚀 Installation
-
+## Client
 ```bash
 # Clone repository
 git clone https://github.com/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics.git
@@ -161,7 +203,16 @@ npm install
 
 # Run frontend
 npm start
-## 🛠️ Technical Components
+
+
+
+```
+## Server
+```
+# Start backend server
+python3 Backend/test.py
+
+
 ```
 
 ### Prerequisites
@@ -221,7 +272,7 @@ git push origin feature/NewFeature
 
 
 ## 📄 License
-MIT License - see [LICENSE.md](LICENSE.md)
+MIT License - see [LICENSE.md](License.md)
 
 
 
@@ -230,8 +281,15 @@ MIT License - see [LICENSE.md](LICENSE.md)
 - COMET researchers (Bosselut et al., 2019)
 - RECCON dataset team (Poria et al., 2021)
 
+## Individual Contributions
+- **Akshat Kumar**  - Developed the code and theory of the project.
+- **Aditya Prakash**  - Developed the code developed and theory of the project.
+- **Anand Vardhan**  - Formulated the project report and theoretical buildup of the project.
+- **Shashank Pant**  - Theoritical buildup for code and UI of the chat system
+
+
 ## References
 - Bosselut et al., 2019. [COMET: The Commonsense Transformers](https://arxiv.org/pdf/2401.17755).
 - [GitHub Repository](https://github.com/Akshatjamadagni/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics).
 
-License: This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+License: This project is licensed under the MIT License. See the [LICENSE](License) file for details.

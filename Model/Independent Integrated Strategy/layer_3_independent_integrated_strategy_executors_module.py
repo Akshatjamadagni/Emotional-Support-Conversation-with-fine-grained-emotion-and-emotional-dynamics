@@ -11,10 +11,9 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 
 # Load the model and tokenizer
-model_name = "facebook/blenderbot-400M-distill"
+model_name = "/content/blenderbot_small-90M"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
-
 # Strategy descriptions
 strategy_descriptions = {
     "Question": "Asking for information related to the problem to help the help-seeker articulate the issues that they face. Open-ended questions are best, and closed questions can be used to get specific information.",
