@@ -147,16 +147,15 @@ The core logic for emotional support conversation generation, divided into three
 
 ### 4. Dataset Structure
 ![Dataset Architecture](Frontend/src/Images/dataset.png)
-*Dataset organization showing:
+
 - Input text corpus
-- Preprocessing pipeline
 - Training/validation/test split
 - Data cleaning and normalization steps
 - Labeling and annotation schema*
 
 ### 5. Model Workflow
-![Model Workflow](/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics/Frontend/src/Images/workflow.png)
-*End-to-end processing pipeline:
+![Model Workflow](Frontend/src/Images/workflow.png)
+
 1. User input processing
 2. Token embedding
 3. Context encoding
@@ -165,7 +164,7 @@ The core logic for emotional support conversation generation, divided into three
 6. Response delivery*
 
 ### 6. User Interface
-![User Interface](/Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics/Frontend/src/Images/chatbot.png)
+![User Interface](Frontend/src/Images/chatbot.png)
 *Complete system architecture showing:
 - Frontend React components
 - API Gateway
