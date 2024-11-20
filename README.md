@@ -5,7 +5,7 @@
 - **Akshat Jamadagni**  - [GitHub: Akshatjamadagni](https://github.com/Akshatjamadagni)  
 - **Aditya Prakash**  - [GitHub: Aditya-Prakash-25](https://github.com/Aditya-Prakash-25)  
 - **Shashank Pant**  - [GitHub: shashankpantiitbhilai](https://github.com/shashankpantiitbhilai)  
-- **Nandostream11**  - [GitHub: Nandostream11](https://github.com/Nandostream11)
+- **Anand Vardhan**  - [GitHub: Nandostream11](https://github.com/Nandostream11)
 
 ---
 
