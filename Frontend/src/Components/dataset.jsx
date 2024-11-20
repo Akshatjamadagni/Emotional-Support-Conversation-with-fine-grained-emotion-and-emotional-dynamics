@@ -1,61 +1,227 @@
 import React from "react";
 import {
   Box,
-  Paper,
+  Container,
   Typography,
+  Paper,
   Table,
   TableBody,
   TableCell,
   TableContainer,
   TableHead,
   TableRow,
+  Card,
+  CardContent,
+  Grid,
+  Chip,
+  Divider,
 } from "@mui/material";
+import { Bar } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
 
-const Dataset = () => {
-  const data = [
-    { id: 1, name: "Item 1", category: "A", value: 100 },
-    { id: 2, name: "Item 2", category: "B", value: 200 },
-    { id: 3, name: "Item 3", category: "A", value: 150 },
-    { id: 4, name: "Item 4", category: "C", value: 300 },
-    { id: 5, name: "Item 5", category: "B", value: 250 },
+// Register Chart.js components
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+
+const ESConvStats = () => {
+  const datasetStats = [
+    {
+      category: "# Dialogues",
+      train: 1040,
+      dev: 130,
+      test: 130,
+    },
+    {
+      category: "# Utterances",
+      train: 30684,
+      dev: 3919,
+      test: 3762,
+    },
+    {
+      category: "Avg. Length of Dialogue",
+      train: 29.5,
+      dev: 30.15,
+      test: 28.94,
+    },
+    {
+      category: "Avg. Length of Utterance",
+      train: 16.5,
+      dev: 16.13,
+      test: 15.81,
+    },
   ];
 
+  const exampleDialog = [
+    { speaker: "seeker", content: "Hello" },
+    {
+      speaker: "supporter",
+      content: "Hello, what would you like to talk about?",
+      strategy: "Question",
+    },
+    {
+      speaker: "seeker",
+      content:
+        "I am having a lot of anxiety about quitting my current job. It is too stressful but pays well",
+    },
+    {
+      speaker: "supporter",
+      content: "What makes your job stressful for you?",
+      strategy: "Question",
+    },
+    {
+      speaker: "seeker",
+      content:
+        "I have to deal with many people in hard financial situations and it is upsetting",
+    },
+  ];
+
+  // Data for the Bar Chart
+  const chartData = {
+    labels: datasetStats.map((stat) => stat.category),
+    datasets: [
+      {
+        label: "Train",
+        data: datasetStats.map((stat) => stat.train),
+        backgroundColor: "rgba(63, 81, 181, 0.6)", // Blue
+      },
+      {
+        label: "Dev",
+        data: datasetStats.map((stat) => stat.dev),
+        backgroundColor: "rgba(255, 152, 0, 0.6)", // Orange
+      },
+      {
+        label: "Test",
+        data: datasetStats.map((stat) => stat.test),
+        backgroundColor: "rgba(76, 175, 80, 0.6)", // Green
+      },
+    ],
+  };
+
+  const chartOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "top",
+      },
+      title: {
+        display: true,
+        text: "ESConv Dataset Statistics (Train/Dev/Test)",
+      },
+    },
+  };
+
   return (
-    <Box sx={{ p: 3 }}>
-      <Typography variant="h4" gutterBottom>
-        Dataset Overview
+    <Container maxWidth="lg" sx={{ py: 4 }}>
+      <Typography variant="h4" gutterBottom color="primary">
+        ESConv Dataset Statistics
       </Typography>
-      <Paper elevation={3} sx={{ width: "100%", mb: 2 }}>
+
+      {/* Dataset Statistics Table */}
+      <Paper elevation={3} sx={{ mb: 4 }}>
         <TableContainer>
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
+          <Table>
             <TableHead>
-              <TableRow>
-                <TableCell>ID</TableCell>
-                <TableCell>Name</TableCell>
-                <TableCell>Category</TableCell>
-                <TableCell align="right">Value</TableCell>
+              <TableRow sx={{ bgcolor: "primary.main" }}>
+                <TableCell sx={{ color: "white", fontWeight: "bold" }}>
+                  Category
+                </TableCell>
+                <TableCell align="center" sx={{ color: "white", fontWeight: "bold" }}>
+                  Train
+                </TableCell>
+                <TableCell align="center" sx={{ color: "white", fontWeight: "bold" }}>
+                  Dev
+                </TableCell>
+                <TableCell align="center" sx={{ color: "white", fontWeight: "bold" }}>
+                  Test
+                </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
-              {data.map((row) => (
+              {datasetStats.map((row, index) => (
                 <TableRow
-                  key={row.id}
-                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                  key={index}
+                  sx={{ "&:nth-of-type(odd)": { bgcolor: "action.hover" } }}
                 >
-                  <TableCell component="th" scope="row">
-                    {row.id}
-                  </TableCell>
-                  <TableCell>{row.name}</TableCell>
-                  <TableCell>{row.category}</TableCell>
-                  <TableCell align="right">{row.value}</TableCell>
+                  <TableCell component="th" scope="row">{row.category}</TableCell>
+                  <TableCell align="center">{row.train}</TableCell>
+                  <TableCell align="center">{row.dev}</TableCell>
+                  <TableCell align="center">{row.test}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
           </Table>
         </TableContainer>
       </Paper>
-    </Box>
+
+      {/* Dataset Statistics Chart */}
+      <Typography variant="h5" gutterBottom color="primary">
+        Dataset Statistics Chart
+      </Typography>
+      <Paper elevation={3} sx={{ p: 3, mb: 4 }}>
+        <Bar data={chartData} options={chartOptions} />
+      </Paper>
+
+      {/* Example Conversation */}
+      <Typography variant="h5" gutterBottom color="primary">
+        Example Conversation
+      </Typography>
+      <Card elevation={3}>
+        <CardContent>
+          <Grid container spacing={2} direction="column">
+            {exampleDialog.map((message, index) => (
+              <Grid item key={index} xs={12}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems:
+                      message.speaker === "seeker" ? "flex-start" : "flex-end",
+                  }}
+                >
+                  <Box sx={{ mb: 0.5 }}>
+                    <Chip
+                      label={message.speaker.toUpperCase()}
+                      color={message.speaker === "seeker" ? "primary" : "secondary"}
+                      size="small"
+                      sx={{ mr: 1 }}
+                    />
+                    {message.strategy && (
+                      <Chip
+                        label={message.strategy}
+                        color="info"
+                        size="small"
+                        variant="outlined"
+                      />
+                    )}
+                  </Box>
+                  <Paper
+                    elevation={1}
+                    sx={{
+                      p: 2,
+                      bgcolor:
+                        message.speaker === "seeker"
+                          ? "primary.light"
+                          : "secondary.light",
+                      maxWidth: "80%",
+                    }}
+                  >
+                    <Typography variant="body1">{message.content}</Typography>
+                  </Paper>
+                </Box>
+              </Grid>
+            ))}
+          </Grid>
+        </CardContent>
+      </Card>
+    </Container>
   );
 };
 
-export default Dataset;
+export default ESConvStats;

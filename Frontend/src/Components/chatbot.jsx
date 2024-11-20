@@ -60,38 +60,40 @@ const TeamStrikersChat = () => {
     setMessages(initialMessages);
   }, []);
 
-  const handleSend = async () => {
-    if (input.trim()) {
-      // Add user message to the chat
-      setMessages([...messages, { text: input, sender: "user" }]);
-      const userMessage = input.trim();
-      setInput("");
+ const handleSend = async () => {
+  if (input.trim()) {
+    // Add user message to the chat
+    setMessages([...messages, { text: input, sender: "user" }]);
+    const userMessage = input.trim();
+    setInput("");
 
-      try {
-        // Simulate bot typing
-        setIsTyping(true);
+    try {
+      // Simulate bot typing
+      setIsTyping(true);
 
-        // Call backend
-        const response = await axios.post("http://127.0.0.1:5000/chat", {
-          user_input: userMessage
-        });
+      // Call backend
+      const response = await axios.post("http://127.0.0.1:5000/chat", {
+        user_input: userMessage
+      });
 
-        // Add bot's response to the chat
-        setMessages((msgs) => [
-          ...msgs,
-          { text: response.data.response, sender: "bot" }
-        ]);
-      } catch (error) {
-        setMessages((msgs) => [
-          ...msgs,
-          { text: "Error communicating with the server. Please try again later.", sender: "bot" }
-        ]);
-      } finally {
-        setIsTyping(false);
-      }
+      // Clean the response by removing quotes at start and end if they exist
+      const cleanedResponse = response.data.response.replace(/^["']|["']$/g, '');
+
+      // Add bot's response to the chat
+      setMessages((msgs) => [
+        ...msgs,
+        { text: cleanedResponse, sender: "bot" }
+      ]);
+    } catch (error) {
+      setMessages((msgs) => [
+        ...msgs,
+        { text: "Error communicating with the server. Please try again later.", sender: "bot" }
+      ]);
+    } finally {
+      setIsTyping(false);
     }
-  };
-
+  }
+};
   return (
     <Box sx={{ height: "100vh", display: "flex", flexDirection: "column" }}>
       <AppBar position="static" sx={{ background: (theme) => theme.palette.primary.main, mb: 2 }}>
