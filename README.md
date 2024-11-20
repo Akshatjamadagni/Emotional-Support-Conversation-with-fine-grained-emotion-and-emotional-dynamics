@@ -63,44 +63,50 @@ Here's an organized breakdown of the project structure:
 ```
 📦 Emotional-Support-Conversation-with-fine-grained-emotion-and-emotional-dynamics
 ├── 📂 Dataset/
-│   └── 📄 ESConv.json                   # Emotional support conversation dataset
+│   ├── 📄 ESConv.json                   # Emotional support conversation dataset
+│   └── 📘 README.md                     # Documentation for the Dataset directory
 │
 ├── 📂 Backend/
 │   ├── 📜 test.py                       # Script to test backend functionality
-│                        
 │
 ├── 📂 Frontend/
 │   ├── 📂 public/                       # Public assets
 │   │   └── ...
-│   └── 📂 src/
-│       ├── 📂 Components/               # React components
-│       │   ├── 📜 about.jsx             # About page component
-│       │   ├── 📜 chatbot.jsx           # Chatbot interface component
-│       │   ├── 📜 dataset.jsx           # Dataset visualization component
-│       │   ├── 📜 navbar.jsx            # Navigation bar component
-│       │   └── 📜 working.jsx           # Model functionality explanation component
-│       ├── 📜 App.js                    # Main React application
-│       ├── 📜 route.js                  # Frontend routing configuration
-│       └── 📜 index.js                  # React DOM rendering entry point
+│   ├── 📂 src/
+│   │   ├── 📂 Components/               # React components
+│   │   │   ├── 📜 about.jsx             # About page component
+│   │   │   ├── 📜 chatbot.jsx           # Chatbot interface component
+│   │   │   ├── 📜 dataset.jsx           # Dataset visualization component
+│   │   │   ├── 📜 navbar.jsx            # Navigation bar component
+│   │   │   └── 📜 working.jsx           # Model functionality explanation component
+│   │   ├── 📜 App.js                    # Main React application
+│   │   ├── 📜 route.js                  # Frontend routing configuration
+│   │   └── 📜 index.js                  # React DOM rendering entry point
+│   └── 📘 README.md                     # Documentation for the Frontend directory
 │
 ├── 📂 Model/
 │   ├── 📂 Causal Interaction Module/
-│   │   └── 📜 layer_2_causal_encoder_module.py   # Cause-aware encoder logic
+│   │   ├── 📜 layer_2_causal_encoder_module.py   # Cause-aware encoder logic
+│   │   └── 📘 README.md                         # Documentation for the Causal Interaction Module
 │   │
 │   ├── 📂 Cause Aware Encoder/
-│   │   ├── 📜 layer_1_encoder_module.py # Main encoder module
-│   │   └── 📜 layer_1_comet_module.py   # COMET-based commonsense reasoning
+│   │   ├── 📜 layer_1_encoder_module.py         # Main encoder module
+│   │   ├── 📜 layer_1_comet_module.py           # COMET-based commonsense reasoning
+│   │   └── 📘 README.md                         # Documentation for the Cause Aware Encoder
 │   │
 │   ├── 📂 Independent Integrated Strategy/
-│   │   └── 📜 layer_3_independent_integrated_strategy_executors.py # Multi-strategy response generation
+│   │   ├── 📜 layer_3_independent_integrated_strategy_executors.py # Multi-strategy response generation
+│   │   └── 📘 README.md                                           # Documentation for Independent Integrated Strategy
 │   │
-│   ├── 📄 context_embeddings.pt         # Pre-trained context embeddings
-│   ├── 📄 situation_embeddings.pt       # Pre-trained situation embeddings
-│   └── 📄 strategy_history_embeddings.pt # Pre-trained strategy embeddings
+│   └── 📘 README.md                      # Documentation for the Model directory
 │
+├── 📄 context_embeddings.pt             # Pre-trained context embeddings
+├── 📄 situation_embeddings.pt           # Pre-trained situation embeddings
+├── 📄 strategy_history_embeddings.pt    # Pre-trained strategy embeddings
 ├── 📓 CODE.ipynb                        # Jupyter notebook for model experimentation
 ├── 📋 requirements.txt                  # Python project dependencies
 └── 📘 README.md                         # Project documentation
+
 ```
 ### 1. **Dataset**
 
@@ -235,6 +241,13 @@ MIT License - see [LICENSE.md](License.md)
 - BlenderBot team (Facebook AI)
 - COMET researchers (Bosselut et al., 2019)
 - RECCON dataset team (Poria et al., 2021)
+
+## Individual Contributions
+- - **Akshat Kumar**  - Developed the code and theory of the project.
+- **Aditya Prakash**  - Developed the code developed and theory of the project.
+- **Anand Vardhan**  - Formulated the project report and theoretical buildup of the project.
+- **Shashank Pant**  - Theoritical buildup for code and UI of the chat system
+
 
 ## References
 - Bosselut et al., 2019. [COMET: The Commonsense Transformers](https://arxiv.org/pdf/2401.17755).
