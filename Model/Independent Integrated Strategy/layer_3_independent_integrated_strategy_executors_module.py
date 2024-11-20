@@ -7,13 +7,16 @@ Original file is located at
     https://colab.research.google.com/drive/1vDl6NG4-xOqVFs8nDTmPT8KwbehFkoPx
 """
 
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
+from transformers import BlenderbotSmallTokenizer, BlenderbotSmallForConditionalGeneration
+from typing import List, Dict
+import logging
+from tqdm import tqdm
 
 # Load the model and tokenizer
-model_name = "facebook/blenderbot-400M-distill"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+model_name = "facebook/blenderbot_small-90M"
+tokenizer = BlenderbotSmallTokenizer.from_pretrained(model_name)
+model = BlenderbotSmallForConditionalGeneration.from_pretrained(model_name).to(self.device)
 
 # Strategy descriptions
 strategy_descriptions = {
