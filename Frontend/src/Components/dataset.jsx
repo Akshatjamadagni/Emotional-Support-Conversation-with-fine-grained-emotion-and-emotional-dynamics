@@ -182,7 +182,7 @@ const ESConvStats = () => {
                     display: "flex",
                     flexDirection: "column",
                     alignItems:
-                      message.speaker === "seeker" ? "flex-start" : "flex-end",
+                      message.speaker === "seeker" ? "flex-end" : "flex-start",
                   }}
                 >
                   <Box sx={{ mb: 0.5 }}>
